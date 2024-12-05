@@ -1,0 +1,12 @@
+<div class="app-container">
+<h1>Register App</h1>
+
+<app-register (userAdded)="onUserAdded($event)"></app-register>
+
+<app-user-list
+  [users]="users"
+  (userDeleted)="onUserDeleted($event)">
+</app-user-list>
+
+
+</div>
